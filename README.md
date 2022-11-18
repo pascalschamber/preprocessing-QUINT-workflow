@@ -12,7 +12,8 @@ Set of interactive image processing tools to help preprocess and organize brain 
 
 **Pipeline**
 	
-	1) VSI_convert\process_VSI.py Convert large VSI images to .png, threshold, resize, and split channels, using resized images to align to brain atlas
+	1) VSI_convert\process_VSI.py Convert large VSI images to .png
+	2) Threshold, resize, and split channels, using resized images to align to brain atlas
 	2) interactive_order_sections.py -> Organize coronal sections from anterior to posterior
-	3) dictate image transforms (rotation, flip, or delete) through xlsx produced when ordering sections
+	3) Dictate image transforms (rotation, flip, or delete) through xlsx produced when ordering sections
 	4) preprocess_quicknii.py -> apply order and transforms to all images (channels, merged, and resized) to generate .XML file required for reading into QuickNII
