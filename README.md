@@ -14,13 +14,13 @@ Then all changes to resized images are propogated back to the large image which 
 **Workflow**
 	
 1) VSI_convert\process_VSI.py 
-	Convert large VSI images to .png
+	Convert large VSI images to .png.
 2) preprocess_quicknii\merge_and_resize.py
-	Threshold, resize, and split channels, using resized images to align to brain atlas
+	Threshold, resize, and split channels, using resized images to align to brain atlas.
 2) preprocess_quicknii\interactive_order_sections.py
 	Organize coronal sections from anterior to posterior
-	Dictate image transforms (rotation, flip, or delete) through xlsx produced when ordering sections
+	Dictate image transforms (rotation, flip, or delete) through xlsx produced when ordering sections.
 3) preprocess_quicknii\preprocess_quicknii.py
-	apply order and transforms to all images (channels, merged, and resized) to generate .XML file required for reading into QuickNII
+	apply order and transforms to all images (channels, merged, and resized) to generate .XML file required for reading into QuickNII.
 
 <img src="workflowDiagram.png" title="Workflow Diagram">
