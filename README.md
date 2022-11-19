@@ -29,6 +29,7 @@ This project was developed to facilitate propogating the adjustments done on res
 
 
 **Usage**
+	
 	from VSI_convert.VSI_convert import convert_vsi
 	from preprocess_quicknii.merge_and_resize import merge_and_resize
 	from preprocess_quicknii.interactive_order_sections import interactive_order_sections
@@ -53,6 +54,7 @@ This project was developed to facilitate propogating the adjustments done on res
 		PLOT_SEPARATE=False,
 	)
 	
+	
 	merge_and_resize(
 	    base_dir, 
 	    output_dir, 
@@ -62,12 +64,14 @@ This project was developed to facilitate propogating the adjustments done on res
 	    base_dir_filter='' # exclude directories with this string
     	)
 	
+	
 	# drag and place images on screen to define order
 	interactive_order_sections(base_dir, animal_number, channel)
 	
 	
-	
-	# Once all orders have been defined run below to apply image order and image transforms, and propogate these alterations back to all other large/resized images and channels
+	'''
+	Once all orders have been defined run below to apply image order and image transforms, and propogate these alterations back to all other large/resized images and channels
+	'''
 	
 	QuickNII_preprocess(
 		base_dir, 
